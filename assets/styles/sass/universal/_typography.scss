@@ -1,0 +1,30 @@
+
+/***********************************************************************************
+Universal Typography
+************************************************************************************/
+
+$font-normal: rgba(0, 0, 0, 0.45);
+$font-dark: rgba(0, 0, 0, 0.65);
+
+body {
+    font-family: 'museo-sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.75;
+    color: $font-normal;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: $font-dark;
+
+    margin-bottom: 5px;
+}
+
+a {
+    font-weight: 500;
+    color: $font-dark;
+}

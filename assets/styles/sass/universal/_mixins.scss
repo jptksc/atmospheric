@@ -1,0 +1,6 @@
+
+// Backgrounds: A simple mixin for background images.
+
+@mixin background-image($image-name){
+    background-image: url(../images/#{$image-name});
+}

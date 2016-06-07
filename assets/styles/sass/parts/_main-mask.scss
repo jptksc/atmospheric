@@ -1,0 +1,10 @@
+
+/***********************************************************************************
+The Mask
+************************************************************************************/
+
+#mask {
+    @include background-image("logo-mask.png");
+    background-position: center center;
+    background-size: cover;
+}

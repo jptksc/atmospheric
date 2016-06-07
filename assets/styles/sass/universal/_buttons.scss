@@ -1,0 +1,75 @@
+
+/***********************************************************************************
+Universal Button & Icon Styles
+************************************************************************************/
+
+.button {
+    display: inline-block;
+
+    position: relative;
+
+    text-transform: uppercase;
+
+    &:after {
+        background-color: #ff9898;
+
+        border-radius: 2px;
+
+        width: calc(100% + 10px);
+        height: 8px;
+
+        position: absolute;
+        bottom: -1px;
+        left: -5px;
+        z-index: -1;
+
+        transition-duration: 0.25s;
+    }
+
+    &:hover:after {
+        height: 1px;
+    }
+}
+
+// Icons: For the social media links.
+
+.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+
+    background-color: #f3f3f3;
+
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.15);
+
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    display: inline-block;
+
+    margin: 0 3px;
+
+    opacity: 0.65;
+
+    &:hover {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.025);
+    }
+}
+
+.icon.instagram {
+    @include background-image("icon-instagram.png");
+}
+
+.icon.medium {
+    @include background-image("icon-medium.png");
+}
+
+.icon.twitter {
+    @include background-image("icon-twitter.png");
+}
+
+.icon.youtube {
+    @include background-image("icon-youtube.png");
+}
