@@ -1,6 +1,6 @@
 
 /***********************************************************************************
-Videos
+The Background Video
 ************************************************************************************/
 
 #video {
@@ -11,7 +11,7 @@ Videos
     width: 100%;
     height: 100%;
 
-    position: relative;
+    position: absolute;
     left: 0;
     z-index: 10;
 
@@ -41,6 +41,8 @@ Videos
             width: 300%;
             left: -100%;
         }
+
+        // Respond: Fill the screen.
 
         @media ($break-m) {
             left: 0;

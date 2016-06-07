@@ -22,8 +22,7 @@ The About Part
         position: absolute;
         top: 40px;
         left: 50%;
-
-        transform: translateX(-50%);
+        transform: translate(-50%, 0);
 
         opacity: 0.65;
     }
@@ -31,15 +30,14 @@ The About Part
     // Copy: The about copy (centered).
 
     .copy {
-        text-align: center;
-
         width: 50%;
 
-        position: relative;
+        position: absolute;
         top: 50%;
         left: 50%;
-
         transform: translate(-50%, -50%);
+
+        text-align: center;
 
         p {
             margin-bottom: 15px;

@@ -19,15 +19,12 @@ Universal Button & Icon Styles
         height: 8px;
 
         position: absolute;
-        bottom: -1px;
+        bottom: 0;
         left: -5px;
-        z-index: -1;
-
-        transition-duration: 0.25s;
     }
 
     &:hover:after {
-        height: 1px;
+        height: 4px;
     }
 }
 

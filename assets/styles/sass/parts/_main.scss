@@ -32,11 +32,9 @@ The Main Content Container
 
         &:nth-child(2) {
             left: 50%;
-
-            z-index: 20;
         }
 
-        // Stack the parts.
+        // Respond: Stack the parts.
 
         @media ($break-m) {
             width: 100%;

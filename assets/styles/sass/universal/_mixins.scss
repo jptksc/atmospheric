@@ -4,3 +4,21 @@
 @mixin background-image($image-name){
     background-image: url(../images/#{$image-name});
 }
+
+// Centering: A simple mixin for absolute centering.
+
+@mixin center($horizontal: true, $vertical: true) {
+    position: absolute;
+
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+        left: 50%;
+        transform: translate(-50%, 0);
+    } @else if ($vertical) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}

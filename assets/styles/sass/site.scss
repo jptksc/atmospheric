@@ -1,7 +1,5 @@
 
-/***********************************************************************************
-Universals
-************************************************************************************/
+// Universals: Get all universal styles.
 
 @import 'universal/normalize',
         'universal/variables',
@@ -9,9 +7,7 @@ Universals
         'universal/typography',
         'universal/buttons';
 
-/***********************************************************************************
-Content
-************************************************************************************/
+// Content: Get all content specific styles.
 
 @import 'parts/main',
         'parts/main-about',

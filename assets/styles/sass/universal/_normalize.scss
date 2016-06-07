@@ -18,7 +18,9 @@ body {
 }
 
 a,
-a img {
+a img,
+a:before,
+a:after {
 	text-decoration: none;
 
     transition-duration: .25s;

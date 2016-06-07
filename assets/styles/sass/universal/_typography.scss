@@ -3,8 +3,12 @@
 Universal Typography
 ************************************************************************************/
 
+// Colors: Font colors.
+
 $font-normal: rgba(0, 0, 0, 0.45);
 $font-dark: rgba(0, 0, 0, 0.65);
+
+// Styles: Font styles.
 
 body {
     font-family: 'museo-sans', sans-serif;
@@ -16,7 +20,6 @@ body {
 
 h1 {
     font-size: 28px;
-    font-weight: 300;
     letter-spacing: -1px;
     text-transform: uppercase;
     color: $font-dark;
