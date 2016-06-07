@@ -1,2 +1,2 @@
-# atmospheric
-The Atmospheric.co Website
+# Atmospheric.co
+An simple landing-page for Atmospheric.
