@@ -45,7 +45,7 @@ The Background Video
         // Respond: Fill the screen.
 
         @media ($break-m) {
-            left: 0;
+            display: none;
         }
     }
 }
