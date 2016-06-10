@@ -1,12 +1,8 @@
 
-/***********************************************************************************
-The Main Content Container
-************************************************************************************/
+/* The Main Content Container
+---------------------------------------------------------------------------------------------------- */
 
 #main {
-    background-position: center center;
-    background-size: cover;
-
     width: 100%;
     height: 100%;
 
@@ -44,4 +40,75 @@ The Main Content Container
             }
         }
     }
+}
+
+
+/* The About Part
+---------------------------------------------------------------------------------------------------- */
+
+#about {
+
+    background-color: #f9f9f9;
+
+    @media ($break-m) {
+        background-color: rgba(249, 249, 249, 0.95);
+    }
+
+    // Logo: The small logo (centered top).
+
+    .logo {
+        border-radius: 6px;
+
+        width: 80px;
+        height: 80px;
+
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        opacity: 0.65;
+    }
+
+    // Copy: The about copy (centered).
+
+    .copy {
+        width: 50%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        @media ($break-m) {
+            width: 80%;
+        }
+    }
+
+    // Social: All social linkage (centered bottom).
+
+    .social {
+        width: 100%;
+
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+
+        text-align: center;
+    }
+}
+
+/* The Mask
+---------------------------------------------------------------------------------------------------- */
+
+#mask {
+    background-image: url(../images/logo-mask.png);
+    background-position: center center;
+    background-size: cover;
 }

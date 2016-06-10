@@ -1,7 +1,6 @@
 
-/***********************************************************************************
-Universal Button & Icon Styles
-************************************************************************************/
+/* Buttons
+---------------------------------------------------------------------------------------------------- */
 
 .button {
     display: inline-block;
@@ -28,7 +27,8 @@ Universal Button & Icon Styles
     }
 }
 
-// Icons: For the social media links.
+/* Icons
+---------------------------------------------------------------------------------------------------- */
 
 .icon {
     background-position: center center;
@@ -56,17 +56,17 @@ Universal Button & Icon Styles
 }
 
 .icon.instagram {
-    @include background-image("icon-instagram.png");
+    background-image: url(../images/icon-instagram.png);
 }
 
 .icon.medium {
-    @include background-image("icon-medium.png");
+    background-image: url(../images/icon-medium.png);
 }
 
 .icon.twitter {
-    @include background-image("icon-twitter.png");
+    background-image: url(../images/icon-twitter.png);
 }
 
 .icon.youtube {
-    @include background-image("icon-youtube.png");
+    background-image: url(../images/icon-youtube.png);
 }

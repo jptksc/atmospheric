@@ -3,13 +3,10 @@
 
 @import 'universal/normalize',
         'universal/variables',
-        'universal/mixins',
         'universal/typography',
         'universal/buttons';
 
 // Content: Get all content specific styles.
 
 @import 'parts/main',
-        'parts/main-about',
-        'parts/main-mask',
         'parts/video';

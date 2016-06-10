@@ -1,10 +1,9 @@
 
-/***********************************************************************************
-The Background Video
-************************************************************************************/
+/* The Background Video
+---------------------------------------------------------------------------------------------------- */
 
 #video {
-    @include background-image("video-background.jpg");
+    background-image: url(../images/video-background.jpg);
     background-position: center center;
     background-size: cover;
 
