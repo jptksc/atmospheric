@@ -4,29 +4,28 @@
 
 // Colors: Font colors.
 
-$font-normal: rgba(0, 0, 0, 0.45);
-$font-dark: rgba(0, 0, 0, 0.65);
+$font-normal: #ccac6d;
+$font-dark: #ccac6d;
 
 // Styles: Font styles.
 
 body {
     font-family: 'museo-sans', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 14px;
     line-height: 1.75;
     color: $font-normal;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 42px;
     letter-spacing: -1px;
     text-transform: uppercase;
     color: $font-dark;
 
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 }
 
 a {
-    font-weight: 500;
     color: $font-dark;
 }

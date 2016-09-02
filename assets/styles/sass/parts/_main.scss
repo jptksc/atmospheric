@@ -1,5 +1,5 @@
 
-/* The Main Content Container
+/* Main
 ---------------------------------------------------------------------------------------------------- */
 
 #main {
@@ -11,83 +11,63 @@
     left: 0;
     z-index: 20;
 
-    // Parts: Split the screen.
-
-    .part {
-        width: 50%;
-        height: 100%;
-
-        position: absolute;
-        top: 0;
-
-        &:nth-child(1) {
-            left: 0;
-
-            z-index: 25;
-        }
-
-        &:nth-child(2) {
-            left: 50%;
-        }
-
-        // Respond: Stack the parts.
-
-        @media ($break-m) {
-            width: 100%;
-
-            &:nth-child(2) {
-                left: 0;
-            }
-        }
-    }
-}
-
-
-/* The About Part
----------------------------------------------------------------------------------------------------- */
-
-#about {
-
-    background-color: #f9f9f9;
-
-    @media ($break-m) {
-        background-color: rgba(249, 249, 249, 0.95);
-    }
+    background: linear-gradient(
+        to right bottom,
+        rgba($darker, 0.94) 50%,
+        rgba($dark, 0.94) 50%
+    );
 
     // Logo: The small logo (centered top).
 
     .logo {
-        border-radius: 6px;
-
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
 
         position: absolute;
-        top: 40px;
+        top: 44px;
         left: 50%;
         transform: translate(-50%, 0);
-
-        opacity: 0.65;
     }
 
     // Copy: The about copy (centered).
 
     .copy {
-        width: 50%;
+        width: 100%;
 
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
+        padding-top: 40px;
+
         text-align: center;
 
         p {
-            margin-bottom: 15px;
+            margin-bottom: 32px;
+
+            span {
+                white-space: nowrap;
+            }
         }
 
-        @media ($break-m) {
-            width: 80%;
+        .contact {
+            height: 30px;
+
+            display: inline-block;
+
+            padding: 0 15px;
+
+            border: 1px solid $gold;
+            border-radius: 15px;
+
+            line-height: 28px;
+
+            &:hover {
+                background-color: $gold;
+
+                color: $darker;
+            }
         }
     }
 
@@ -97,18 +77,44 @@
         width: 100%;
 
         position: absolute;
-        bottom: 40px;
+        bottom: 36px;
         left: 0;
 
         text-align: center;
+
+        .icon {
+            width: 50px;
+            height: 50px;
+
+            display: inline-block;
+
+            margin: 0 2px;
+
+            border-radius: 50%;
+
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 18px;
+
+            &:hover {
+                background-color: $darker;
+            }
+        }
+
+        .icon.instagram {
+            background-image: url(../images/icon-instagram.png);
+        }
+
+        .icon.medium {
+            background-image: url(../images/icon-medium.png);
+        }
+
+        .icon.twitter {
+            background-image: url(../images/icon-twitter.png);
+        }
+
+        .icon.youtube {
+            background-image: url(../images/icon-youtube.png);
+        }
     }
-}
-
-/* The Mask
----------------------------------------------------------------------------------------------------- */
-
-#mask {
-    background-image: url(../images/logo-mask.png);
-    background-position: center center;
-    background-size: cover;
 }

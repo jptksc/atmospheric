@@ -14,32 +14,39 @@
     </head>
 
     <body>
+        <section id="main">
+            <img class="logo" src="assets/images/logo.png"/>
+
+            <div class="copy">
+                <h1>Atmospheric</h1>
+                <p><span>Epic aerial photography &amp; videography</span><br /><span>for athletes, adventurers, architects,</span><br /><span>filmmakers and travelers.</span><br /><span>Based in the Pacific Northwest,</span><br /><span>traveling the world.</span></p>
+                <a class="contact" href="mailto:hi@atmospheric.co">hi@atmostpheric.co</a>
+            </div>
+
+            <div class="social">
+                <a class="icon medium" href="https://medium.com/atmospheric" target="_blank"></a>
+                <a class="icon instagram" href="https://www.instagram.com/atmsphrc/" target="_blank"></a>
+                <a class="icon twitter" href="https://twitter.com/atmsphrc" target="_blank"></a>
+            </div>
+        </section>
+
         <section id="video">
             <video preload autoplay loop>
-                <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.m4v?raw=true" type="video/mp4" title="mp4">
+                <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.mp4?raw=true" type="video/mp4" title="mp4">
                 <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.webm?raw=true" type="video/webm" title="webm">
             </video>
         </section>
 
-        <section id="main">
-            <div class="part" id="about">
-                <img class="logo" src="assets/images/logo.png"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script>
+            var vid = $("#video video");
 
-                <div class="copy">
-                    <h1>Atmospheric</h1>
-                    <p>We’re making epic aerial photography and videography for athletes, adventurers, architects, filmmakers and travelers... based in the Pacific Northwest, traveling the world, having fun.</p>
-                    <a class="button" href="mailto:hi@atmospheric.co">Contact Us</a>
-                </div>
-
-                <div class="social">
-                    <a class="icon medium" href="https://medium.com/going-atmospheric" target="_blank"></a>
-                    <a class="icon instagram" href="https://www.instagram.com/atmsphrc/" target="_blank"></a>
-                    <a class="icon twitter" href="https://twitter.com/atmsphrc" target="_blank"></a>
-                </div>
-            </div>
-
-            <div class="part" id="mask">
-            </div>
-        </section>
+            $(document).ready(function() {
+                vid.on("canplay", function() {
+                    vid[0].play();
+                    vid.fadeIn(2000);
+                });
+            });
+        </script>
     </body>
 </html>
