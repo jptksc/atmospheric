@@ -2,6 +2,16 @@
 /* Universal Typography
 ---------------------------------------------------------------------------------------------------- */
 
+@font-face {
+  	font-family: 'museo';
+  	src: url('../fonts/museo.eot');
+  	src: url('../fonts/museo.eot?#iefix') format('embedded-opentype'),
+    		url('../fonts/museo.woff') format('woff'),
+    		url('../fonts/museo.ttf') format('truetype');
+  	font-weight: 200;
+  	font-style: normal;
+}
+
 // Colors: Font colors.
 
 $font-normal: #ccac6d;
@@ -10,8 +20,7 @@ $font-dark: #ccac6d;
 // Styles: Font styles.
 
 body {
-    font-family: 'museo-sans', sans-serif;
-    font-weight: 100;
+    font-family: 'museo', sans-serif;
     font-size: 14px;
     line-height: 1.75;
     color: $font-normal;
