@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Atmospheric</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Atmospheric</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
-        
-        <link rel="stylesheet" type="text/css" href="assets/styles/site.css?version=1.0">
-        <link rel="shortcut icon" href="favicon.ico">
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
 
-    <body>
-        <section id="main">
-            <img class="logo" src="assets/images/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/site.css?version=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
 
-            <div class="copy">
-                <h1>Atmospheric</h1>
-                <p><span>Epic aerial photography &amp; videography</span><br /><span>for athletes, adventurers, architects,</span><br /><span>filmmakers and travelers.</span><br /><span>Based in the Pacific Northwest,</span><br /><span>traveling the world.</span></p>
-                <a class="contact" href="mailto:hi@atmospheric.co">hi@atmospheric.co</a>
-            </div>
+  <body>
+    <section id="main">
+      <img class="logo" src="assets/images/logo.png"/>
 
-            <div class="social">
-                <a class="icon medium" href="https://medium.com/atmospheric" target="_blank"></a>
-                <a class="icon instagram" href="https://www.instagram.com/atmsphrc/" target="_blank"></a>
-                <a class="icon twitter" href="https://twitter.com/atmsphrc" target="_blank"></a>
-            </div>
-        </section>
+      <div class="copy">
+        <h1>Atmospheric</h1>
+        <p><span>Epic aerial photography &amp; videography</span><br /><span>for athletes, adventurers, architects,</span><br /><span>filmmakers and travelers.</span><br /><span>Based in the Pacific Northwest,</span><br /><span>traveling the world.</span></p>
+        <a class="button open" href="#services">View Our Services</a>
+      </div>
 
-        <section id="video">
-            <video preload autoplay loop>
-                <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.mp4?raw=true" type="video/mp4" title="mp4">
-                <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.webm?raw=true" type="video/webm" title="webm">
-            </video>
-        </section>
+      <div class="social">
+        <a class="icon email" href="mailto:hi@jason.sc" target="_blank"></a>
+        <a class="icon medium" href="https://medium.com/atmospheric" target="_blank"></a>
+        <a class="icon instagram" href="https://www.instagram.com/atmsphrc/" target="_blank"></a>
+        <a class="icon twitter" href="https://twitter.com/atmsphrc" target="_blank"></a>
+      </div>
+    </section>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script>
-            var vid = $("#video video");
+    <section id="video">
+      <video preload autoplay loop>
+        <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.mp4?raw=true" type="video/mp4" title="mp4">
+        <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.webm?raw=true" type="video/webm" title="webm">
+      </video>
+    </section>
 
-            $(document).ready(function() {
-                vid.on("canplay", function() {
-                    vid[0].play();
-                    vid.fadeIn(2000);
-                });
-            });
-        </script>
-    </body>
+    <section id="services" class="inactive">
+      <a class="close" href="#services"></a>
+      
+      <div class="service">
+        <h2>Biological</h2>
+
+        <div class="item">
+          <h3>Adventure</h3>
+          <p>We are avid climbers, snowboarders, skiers, mountain bikers, surfers and wakeboarders. Needless to say, whatever your pleasure, we can get the action shot or footage you’re looking for (conditions&nbsp;permitting).</p>
+        </div>
+
+        <div class="item">
+          <h3>Sports</h3>
+          <p>Soccer, football, baseball, golf, tennis, etc. — we can definitely work with you to get your personal or professional aerial shots&nbsp;and/or&nbsp;footage.</p>
+        </div>
+
+        <div class="item">
+          <h3>Events</h3>
+          <p class="last">Concerts, festivals, performing arts, parties,&nbsp;challenges,&nbsp;weddings.</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <h2>Architectural</h2>
+
+        <div class="item">
+          <h3>Commercial</h3>
+          <p>We love architecture and shooting building exteriors, interiors (including surrounding grounds) from&nbsp;floor&nbsp;to&nbsp;roof.</p>
+        </div>
+
+        <div class="item">
+          <h3>Residential</h3>
+          <p>We can shoot comprehensive home exteriors and properties for real estate or&nbsp;personal&nbsp;purposes.</p>
+        </div>
+
+        <div class="item">
+          <h3>Venues</h3>
+          <p class="last">We can shoot amphitheaters, arenas, stadiums and virtually any other&nbsp;large-scale&nbsp;venue.</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <h2>Geological</h2>
+
+        <div class="item">
+          <h3>Archeological</h3>
+          <p>We’d love the opportunity document an archeological site from an aerial perspective. We’re willing to travel &amp; shoot free of charge in order to&nbsp;realize&nbsp;that&nbsp;goal.</p>
+        </div>
+
+        <div class="item">
+          <h3>Land or Water</h3>
+          <p class="last">We have the capability to cover miles of terrain from any single point which is perfect for any type of land or water&nbsp;mass&nbsp;coverage.</p>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	  <script type="text/javascript" src="assets/scripts/site.js"></script>
+  </body>
 </html>

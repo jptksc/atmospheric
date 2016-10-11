@@ -3,38 +3,45 @@
 ---------------------------------------------------------------------------------------------------- */
 
 @font-face {
-  	font-family: 'museo';
-  	src: url('../fonts/museo.eot');
-  	src: url('../fonts/museo.eot?#iefix') format('embedded-opentype'),
-    		url('../fonts/museo.woff') format('woff'),
-    		url('../fonts/museo.ttf') format('truetype');
-  	font-weight: 200;
-  	font-style: normal;
+	font-family: 'museo';
+	src:
+    url('../fonts/museo.eot');
+	src:
+    url('../fonts/museo.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/museo.woff') format('woff'),
+		url('../fonts/museo.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
 }
-
-// Colors: Font colors.
-
-$font-normal: #ccac6d;
-$font-dark: #ccac6d;
 
 // Styles: Font styles.
 
 body {
-    font-family: 'museo', sans-serif;
-    font-size: 14px;
-    line-height: 1.75;
-    color: $font-normal;
+  font-family: 'museo', sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: $light;
 }
 
 h1 {
-    font-size: 42px;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: $font-dark;
+  font-size: 42px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: $lighter;
 
-    margin-bottom: 9px;
+  margin-bottom: 9px;
+}
+
+h2 {
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+h3 {
+	font-size: 16px;
+  text-transform: uppercase;
 }
 
 a {
-    color: $font-dark;
+  color: $light;
 }

@@ -1,0 +1,150 @@
+
+/* Services
+---------------------------------------------------------------------------------------------------- */
+
+#services {
+  width: calc(100% - 40px);
+  max-width: 480px;
+
+  position: relative;
+  z-index: 30;
+
+  transform: translateY(100%);
+
+  overflow: hidden;
+
+  margin: 0 0 20px calc(50% - 240px);
+
+  border-radius: 6px;
+
+  background-color: $lighter;
+
+  animation-duration: .5s;
+  animation-fill-mode: both;
+
+  @media ('max-width: 520px') {
+    margin-left: 20px;
+  }
+
+  // Panel animations.
+
+  &.opening {
+    animation-name: opening;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  &.closing {
+    animation-name: closing;
+  }
+
+  &.inactive {
+    display: none;
+  }
+
+  // The close button.
+
+  .close {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 18px;
+    right: 23px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 20px;
+      width: 1px;
+      background-color: $darker;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  // Services.
+
+  .service {
+    width: 100%;
+
+    float: left;
+
+    padding: 30px 40px 33px;
+
+    &:nth-child(3) {
+      background-color: rgba($dark, 0.025);
+    }
+
+    h2 {
+      padding-bottom: 10px;
+
+      margin-bottom: 13px;
+
+      color: $darker;
+
+      border-bottom: 1px solid rgba($darker, 0.075);
+    }
+
+    h3 {
+      color: $dark;
+    }
+
+    p {
+      color: $dark;
+
+      &:not(.last) {
+        padding-bottom: 12px;
+
+        margin-bottom: 12px;
+
+        border-bottom: 1px solid rgba($darker, 0.05);
+      }
+    }
+  }
+}
+
+/* Services Animations
+---------------------------------------------------------------------------------------------------- */
+
+@keyframes opening {
+    0% {
+      opacity: 0;
+
+      transform: translateY(100%);
+    }
+
+    100% {
+      opacity: 1;
+
+      transform: translateY(20px);
+    }
+}
+
+@keyframes closing {
+    0% {
+      opacity: 1;
+
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 0;
+
+      transform: translateY(100%);
+    }
+}
