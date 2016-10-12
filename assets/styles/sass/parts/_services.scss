@@ -24,7 +24,7 @@
     margin-left: 20px;
   }
 
-  // Panel animations.
+  // Section states and animations.
 
   &.opening {
     animation-name: opening;
@@ -77,21 +77,21 @@
     }
   }
 
-  // Service items.
+  // Service grouping.
 
   .service {
     width: 100%;
 
     float: left;
 
-    padding: 30px 40px 33px;
+    padding: 30px 40px 40px;
 
-    &:nth-child(3) {
+    &:nth-child(odd) {
       background-color: rgba($dark, 0.025);
     }
 
     h2 {
-      padding-bottom: 10px;
+      padding-bottom: 9px;
 
       margin-bottom: 13px;
 
@@ -100,19 +100,46 @@
       border-bottom: 1px solid rgba($darker, 0.075);
     }
 
-    h3 {
-      color: $dark;
-    }
+    // Service items.
 
-    p {
-      color: $dark;
-
-      &:not(.last) {
-        padding-bottom: 12px;
+    .item {
+      &:not(:last-of-type) {
+        padding-bottom: 20px;
 
         margin-bottom: 12px;
+      }
 
-        border-bottom: 1px solid rgba($darker, 0.05);
+      h3 {
+        color: $dark;
+      }
+
+      p {
+        color: $dark;
+
+        margin-bottom: 9px;
+      }
+
+      .button {
+        height: 30px;
+
+        display: inline-block;
+
+        position: relative;
+
+        padding: 0 15px;
+
+        border: 1px solid $dark;
+
+        border-radius: 15px;
+
+        font-size: 12px;
+        line-height: 28px;
+        color: $dark;
+        text-transform: uppercase;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
       }
     }
   }
