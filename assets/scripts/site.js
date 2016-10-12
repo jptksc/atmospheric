@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
 });
 
-/* Panels: Used for login forms, videos, etc.
+/* Services: Open and close the services panel.
 ---------------------------------------------------------------------------------------------------- */
 
 // Open panels via the ".open" class.
@@ -21,11 +21,6 @@ $(document).on('click', '.open', function() {
 
   // Open the panel.
   $(panel).removeClass('inactive closing').addClass('active opening');
-
-  // Close any other active panel.
-  if ($('#panels .active')[0]) {
-    $('#panels .active').not(panel).removeClass('active opening').addClass('inactive closing');
-  }
 
   return false;
 });
@@ -42,10 +37,7 @@ function panel_close() {
 
     // Make the panel inactive.
     $(panel).removeClass('active').addClass('inactive');
-
-    // Empty the video if there is one.
-    $('#video .video').empty();
-  }, 250);
+  }, 500);
 }
 
 // Close panels via the ".close" class.
