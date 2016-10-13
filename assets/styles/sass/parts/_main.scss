@@ -68,8 +68,10 @@
       color: $dark;
       text-transform: uppercase;
 
-      &:hover {
-        transform: translateY(-3px);
+      @media screen and (min-device-width:1024px) {
+        &:hover {
+          transform: translateY(-3px);
+        }
       }
     }
   }
@@ -99,8 +101,10 @@
       background-repeat: no-repeat;
       background-size: 18px;
 
-      &:hover {
-        transform: translateY(-3px);
+      @media screen and (min-device-width:1024px) {
+        &:hover {
+          transform: translateY(-3px);
+        }
       }
     }
 
