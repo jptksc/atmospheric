@@ -110,13 +110,13 @@
       }
 
       h3 {
-        color: $dark;
+        color: $darker;
 
         margin-bottom: 3px;
       }
 
       p {
-        color: $dark;
+        color: rgba($dark, 0.75);
 
         margin-bottom: 4px;
       }
@@ -126,7 +126,7 @@
 
         position: relative;
 
-        color: $dark;
+        color: $darker;
 
         &:after {
           width: 100%;
