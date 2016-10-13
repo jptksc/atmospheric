@@ -135,8 +135,9 @@
           position: absolute;
           bottom: 2px;
           left: 0;
+          z-index: 30;
 
-          background-color: #b6e7f7;
+          background-color: rgba(#b6e7f7, 0.5);
 
           content: '';
         }
