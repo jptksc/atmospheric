@@ -1,0 +1,89 @@
+
+/* Content
+---------------------------------------------------------------------------------------------------- */
+
+.content {
+  width: calc(100% - 40px);
+  max-width: 480px;
+
+  position: relative;
+  z-index: 30;
+
+  overflow: hidden;
+
+  margin: 0 0 20px calc(50% - 240px);
+
+  border-radius: 6px;
+
+  background-color: $lighter;
+
+  animation-duration: .5s;
+  animation-fill-mode: both;
+
+  @media ('max-width: 520px') {
+    margin-left: 20px;
+  }
+
+  // Section states and animations.
+
+  &.opening {
+    animation-name: content-opening;
+  }
+
+  &.active {
+    transform: translate3d(0, 20px, 0);
+  }
+
+  &.closing {
+    animation-name: content-closing;
+  }
+
+  &.inactive {
+    position: fixed;
+    z-index: -500;
+    top: 100%;
+  }
+}
+
+// Services content.
+
+@import 'content-services';
+
+// Ventures content.
+
+@import 'content-ventures';
+
+/* Content Animations
+---------------------------------------------------------------------------------------------------- */
+
+@keyframes content-opening {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 20px, 0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes content-closing {
+  0% {
+    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 20px, 0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+
+    opacity: 0;
+  }
+}

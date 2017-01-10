@@ -1,0 +1,36 @@
+
+/* Buttons
+---------------------------------------------------------------------------------------------------- */
+
+// The close button.
+
+.close {
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 18px;
+  right: 23px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 1px;
+    background-color: $darker;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

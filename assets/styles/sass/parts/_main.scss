@@ -51,12 +51,13 @@
       }
     }
 
-    .button {
+    .actions {
+      width: 200px;
       height: 30px;
 
       display: inline-block;
 
-      padding: 0 15px;
+      position: relative;
 
       border-radius: 15px;
 
@@ -65,12 +66,49 @@
       font-size: 12px;
       font-weight: 300;
       line-height: 30px;
-      color: $dark;
       text-transform: uppercase;
+      color: $dark;
 
-      @media screen and (min-device-width:1024px) {
+      a {
+        width: 100px;
+
+        float: left;
+
+        position: relative;
+
+        color: $dark;
+      }
+
+      span {
+        width: 20px;
+        height: 20px;
+
+        position: absolute;
+        top: 5px;
+        left: 50%;
+
+        margin-left: -16px;
+
         &:hover {
-          transform: translateY(-3px);
+          opacity: 0.5;
+        }
+
+        &:before,
+        &:after {
+          position: absolute;
+          left: 15px;
+          content: ' ';
+          height: 20px;
+          width: 1px;
+          background-color: $orange;
+        }
+
+        &:before {
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          transform: rotate(-45deg);
         }
       }
     }
@@ -126,6 +164,7 @@
 
     .icon.youtube {
       background-image: url(../images/icon-youtube.png);
+      background-size: 20px;
     }
   }
 }

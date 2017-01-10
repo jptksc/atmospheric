@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
 
-    <link rel="stylesheet" type="text/css" href="assets/styles/site.css?version=1.5">
+    <link rel="stylesheet" type="text/css" href="assets/styles/site.css?version=1.6">
     <link rel="shortcut icon" href="favicon.ico">
   </head>
 
@@ -17,25 +17,30 @@
       <div class="copy">
         <h1>Atmospheric</h1>
         <p>Epic aerial <span>(drone)</span> photography &amp; videography<br />for athletes, adventurers, architects,<br />filmmakers and travelers.<br />Based in the Pacific Northwest<span> (Seattle, WA)</span>,<br />traveling the world.</p>
-        <a class="button open" href="#services">View Our Services</a>
+
+        <div class="actions">
+          <a class="open" href="#services">Services</a>
+          <span></span>
+          <a class="open" href="#ventures">Ventures</a>
+        </div>
       </div>
 
       <div class="social">
         <a class="icon email" href="mailto:hi@atmospheric.co?subject=Hello Atmospheric" target="_blank"></a>
-        <a class="icon medium" href="https://medium.com/atmospheric" target="_blank"></a>
+        <a class="icon youtube" href="https://youtube.com/atmospheric" target="_blank"></a>
         <a class="icon instagram" href="https://www.instagram.com/atmsphrc/" target="_blank"></a>
         <a class="icon twitter" href="https://twitter.com/atmsphrc" target="_blank"></a>
       </div>
     </section>
 
-    <section id="video">
+    <section id="background">
       <video preload autoplay loop>
         <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.mp4?raw=true" type="video/mp4" title="mp4">
         <source src="https://github.com/Circa75/atmospheric/blob/gh-pages/assets/video/video.webm?raw=true" type="video/webm" title="webm">
       </video>
     </section>
 
-    <section id="services" class="inactive">
+    <section id="services" class="content inactive">
       <a class="close" href="#services"></a>
 
       <div class="service">
@@ -108,6 +113,60 @@
         </div>
       </div>
     </section>
+
+    <section id="ventures" class="content inactive">
+      <a class="close" href="#ventures"></a>
+
+      <div class="media">
+        <h2>Latest Ventures</h2>
+
+        <div class="item">
+          <a class="cover view start" href="#video" data-type="video" data-video-type="youtube" data-video-id="b_1y_1VoaHw" data-image="jade-wetlands" style="background-image: url(assets/covers/jade-wetlands-small.jpg);">
+          </a>
+
+          <h3>Jade Wetlands</h3>
+          <p>So many beautiful wetlands to explore here in Washington. Here’s the latest we’ve found.</p>
+        </div>
+
+        <div class="item">
+          <a class="cover view" href="#photo" data-type="photo" data-image="whidbey-shore" style="background-image: url(assets/covers/whidbey-shore-small.jpg);">
+          </a>
+
+          <h3>Whidbey Shore</h3>
+          <p>Recently over Whidbey Island on the Ebey’s Landing trail. Highly recommended.</p>
+        </div>
+
+        <div class="item">
+          <a class="cover view" href="#photo" data-type="photo" data-image="dumas-colors" style="background-image: url(assets/covers/dumas-colors-small.jpg);">
+          </a>
+
+          <h3>Dumas Colors</h3>
+          <p>Recently over Dumas Bay just south of Seattle. So many colors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video: The video panel an embed container. -->
+    <div class="panel inactive" id="video">
+      <a class="close" href="#video"></a>
+
+      <div class="cover blurred">
+      </div>
+
+      <div class="inner video">
+      </div>
+    </div>
+
+    <!-- Photo: The photo panel an embed container. -->
+    <div class="panel inactive" id="photo">
+      <a class="close" href="#photo"></a>
+
+      <div class="cover blurred">
+      </div>
+
+      <div class="image">
+      </div>
+    </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="assets/scripts/site.js"></script>

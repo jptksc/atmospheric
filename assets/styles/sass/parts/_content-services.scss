@@ -1,0 +1,80 @@
+
+/* Services
+---------------------------------------------------------------------------------------------------- */
+
+#services {
+
+  // Service grouping.
+
+  .service {
+    width: 100%;
+
+    float: left;
+
+    padding: 30px 40px 38px;
+
+    &:nth-child(odd) {
+      background-color: rgba($dark, 0.025);
+    }
+
+    h2 {
+      padding-bottom: 29px;
+
+      margin-bottom: 33px;
+
+      color: $darker;
+
+      border-bottom: 1px solid rgba($darker, 0.075);
+    }
+
+    // Service items.
+
+    .item {
+      &:not(:last-of-type) {
+        padding-bottom: 19px;
+
+        margin-bottom: 12px;
+      }
+
+      h3 {
+        color: $darker;
+
+        margin-bottom: 3px;
+      }
+
+      p {
+        color: rgba($dark, 0.75);
+
+        margin-bottom: 4px;
+      }
+
+      .button {
+        display: inline-block;
+
+        position: relative;
+
+        color: $darker;
+
+        &:after {
+          width: 100%;
+          height: 5px;
+
+          position: absolute;
+          bottom: 2px;
+          left: 0;
+          z-index: 30;
+
+          background-color: rgba(#b6e7f7, 0.5);
+
+          content: '';
+        }
+
+        @media screen and (min-device-width:1024px) {
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+}

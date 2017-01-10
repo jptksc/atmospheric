@@ -1,0 +1,102 @@
+
+/* Ventures
+---------------------------------------------------------------------------------------------------- */
+
+#ventures {
+
+  // Media grouping.
+
+  .media {
+    width: 100%;
+
+    float: left;
+
+    padding: 30px 40px 28px;
+
+    &:nth-child(odd) {
+      background-color: rgba($dark, 0.025);
+    }
+
+    h2 {
+      padding-bottom: 29px;
+
+      margin-bottom: 40px;
+
+      color: $darker;
+
+      border-bottom: 1px solid rgba($darker, 0.075);
+    }
+
+    // Media items.
+
+    .item {
+
+      &:not(:last-of-type) {
+        padding-bottom: 27px;
+
+        margin-bottom: 40px;
+
+        border-bottom: 1px solid rgba($darker, 0.075);
+      }
+
+      h3 {
+        color: $darker;
+
+        margin-bottom: 3px;
+      }
+
+      p {
+        color: rgba($dark, 0.75);
+
+        margin-bottom: 4px;
+      }
+
+      .cover {
+        width: 100%;
+
+        float: left;
+
+        position: relative;
+
+        padding-top: 56.25%;
+        margin-bottom: 23px;
+
+        box-shadow: 0 10px 60px rgba($dark, 0.5);
+
+        border-radius: 6px;
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.start:after {
+          width: 50px;
+          height: 50px;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          transform: translate(-50%, -50%);
+
+          background-image: url(../images/icon-play.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 50px;
+
+          opacity: 0.75;
+
+          content: '';
+        }
+
+        &:hover {
+          box-shadow: 0 10px 60px rgba($dark, 0.35);
+        }
+
+        &.start:hover:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
