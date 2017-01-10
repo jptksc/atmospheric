@@ -74,16 +74,19 @@ $(document).on('click', '.view', function() {
 
     // Set the cover and image.
     $('#photo .cover').css('background-image', 'url(assets/covers/' + image + '-small.jpg)');
-    $('#photo .image').css('background-image', 'url(assets/covers/' + image + '.jpg)');
 
-    $('#photo').imagesLoaded( { background: '.cover' }, function() {
+    setTimeout(function(){
+      $('#photo .image').css('background-image', 'url(assets/covers/' + image + '.jpg)');
 
-      setTimeout(function(){
+      $('#photo').imagesLoaded( { background: '.cover' }, function() {
 
-        // Fade out the cover.
-        $('#photo .cover').fadeOut('slow');
-      }, 1000);
-    });
+        setTimeout(function(){
+
+          // Fade out the cover.
+          $('#photo .cover').fadeOut('slow');
+        }, 1000);
+      });
+    }, 1000);
 
     // Open the video panel.
     $('#photo').removeClass('inactive closing').addClass('active opening');
@@ -135,6 +138,9 @@ function panel_close() {
 
     // Empty the video if there is one.
     $('#video .video').empty();
+
+    // Fade out the cover.
+    $('#photo .cover').fadeIn('fast');
   }, 500);
 }
 

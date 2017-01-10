@@ -5,9 +5,13 @@
 .video {
   width: 80%;
 
-  box-shadow: 0 10px 60px rgba($dark, 0.75);
+  box-shadow: 0 10px 60px rgba(#000000, 0.85);
 
   background-color: #000000;
+
+  border-radius: 6px;
+
+  overflow: hidden;
 
   &:after {
     padding-top: 56.25%;
