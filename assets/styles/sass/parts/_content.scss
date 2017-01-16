@@ -6,7 +6,7 @@
   width: calc(100% - 40px);
   max-width: 480px;
 
-  position: relative;
+  position: absolute;
   z-index: 30;
 
   overflow: hidden;
@@ -39,9 +39,8 @@
   }
 
   &.inactive {
-    position: fixed;
-    z-index: -500;
     top: 100%;
+    z-index: -500;
   }
 }
 

@@ -39,6 +39,22 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/assets\/covers\/lake-washington-small.jpg": {
+		"ft": 16384,
+		"iS": 223629,
+		"oA": 0,
+		"oAP": "\/assets\/covers\/lake-washington-small.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/covers\/lake-washington.jpg": {
+		"ft": 16384,
+		"iS": 1482315,
+		"oA": 0,
+		"oAP": "\/assets\/covers\/lake-washington.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/covers\/whidbey-shore-small.jpg": {
 		"ft": 16384,
 		"iS": 1183711,
